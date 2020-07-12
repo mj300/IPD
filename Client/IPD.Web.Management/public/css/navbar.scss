@@ -1,0 +1,127 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.navbar-toggler {
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0 !important;
+    border-radius: 0px !important;
+    text-decoration-color: black;
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-container {
+    width: 177.31px !important;
+    height: 70px !important;
+}
+
+.Logo, .Logo:active {
+    max-height: 150%;
+    transition: 1000ms;
+}
+
+.Logo:hover {
+    transform: rotate(-360deg);
+    transition: 3000ms cubic-bezier(0.28,-0.61, 0.64, 2.12) transform 5000ms;
+}
+
+.Logo-sm {
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    max-height: 40px;
+    background-color: transparent !important;
+}
+
+.toggler-hide {
+    font-size: 0 !important;
+    transition: 300ms;
+}
+
+.toggler-show {
+    transition: 500ms;
+}
+
+
+@media(max-width:768px) {
+    .text-nav {
+        justify-items: center;
+        padding-top: 1rem;
+        float: none;
+        color: rgba(40, 62, 8, 0.75) !important;
+        font-weight: bold;
+        text-align: center center;
+        border-bottom: solid 0.1rem rgba(61, 95, 9, 0.20);
+        transition: 500ms;
+    }
+}
+
+
+/*#region Navbar */
+
+
+.text-nav {
+    padding-top: 1rem;
+    float: none;
+    color: rgba(52,144,144, 0.75) !important;
+    font-weight: bold;
+    text-align: center center;
+    border-bottom: solid 0.5rem rgba(52,144,144, 0.20);
+    transition: 500ms;
+
+    &:hover, &:focus {
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgba(52,144,144, 1) !important;
+        background-color: rgba(52,144,144, 0.07) !important;
+        transition: 500ms;
+    }
+
+    body.dark & {
+        padding-top: 1rem;
+        float: none;
+        color: rgba(247,255,247, 0.75) !important;
+        font-weight: bold;
+        text-align: center center;
+        border-bottom: solid 0.5rem rgba(247,255,247, 0.20);
+        transition: 500ms;
+
+        &:hover, &:focus {
+            font-weight: bolder;
+            text-decoration: none;
+            color: rgba(247,255,247, 1) !important;
+            background-color: rgba(52,144,144, 0.07) !important;
+            transition: 500ms;
+        }
+    }
+}
+
+.text-nav-visited {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(52,144,144, 1) !important;
+    border-bottom: solid 0.5rem rgba(52,144,144, 0.80);
+    transition: 500ms;
+
+    body.dark & {
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgba(247,255,247, 1) !important;
+        border-bottom: solid 0.5rem rgba(247,255,247, 0.80);
+        transition: 500ms;
+    }
+}
+
+/*#endregion */
+

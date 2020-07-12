@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/IPD
+/Client/IPD.Web.Management/bin
+/Client/IPD.Web.Management/build/development
+/Client/IPD.Web.Management/node_modules
+/Client/IPD.Web.Management/obj/Debug
+/Client/IPD.Web.Management/package-lock.json
+/Server/IPD.Web.Api/bin/Debug/netcoreapp3.1
+/Server/IPD.Web.Api/obj

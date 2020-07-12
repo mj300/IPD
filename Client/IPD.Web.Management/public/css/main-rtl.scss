@@ -1,0 +1,8 @@
+﻿@import "_direction-rtl.scss";
+@import "main.scss";
+
+body {
+    direction: $direction;
+    text-align: $start-direction;
+    padding-#{$end-direction}: 10px;
+}

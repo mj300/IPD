@@ -1,0 +1,16 @@
+{
+  "RoleManagement": "مدیریت نقش ها",
+  "AccessClaimType": "نوع سطح دسترسی",
+  "RoleName": "نام",
+  "AccessClaim": "سطح دسترسی",
+  "NewRole": "نقش جدید",
+  "UpdateRole": "ویرایش نقش",
+  "RoleDeleted": "نقش مورد نظر حذف شد",
+  "RoleUpdated": "نقش ویرایش شد.",
+  "NewRoleCreated": "نقش جدید اضافه شد.",
+  "Role": "نقش",
+  "Admin": "ادمین",
+  "Manager": "مدیر",
+  "Patient": "بیمار",
+  "Staff": "کارمند"
+}

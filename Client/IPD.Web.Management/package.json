@@ -1,0 +1,49 @@
+{
+  "name": "IPD.web.management",
+  "version": "0.0.0",
+  "description": "IPD.Web.Management",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server  --mode development"
+  },
+  "author": "MJ300",
+  "devDependencies": {
+    "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/redux": "^3.6.31",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "@types/redux-persist": "^4.3.1",
+    "@types/redux-thunk": "^2.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.6.0",
+    "redux": "^4.0.5",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.1",
+    "source-map-loader": "1.0.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "3.0.6",
+    "ts-loader": "^7.0.5",
+    "typescript": "3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "html-webpack-plugin": "^4.3.0",
+    "i18next": "^19.5.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.0",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "twomj-components-react": "file:../../../../2mj-uk/TwoMJ.Template/Web/Client/TwoMJ.Components.React",
+    "twomj-core-ts": "file:../../../../2mj-uk/TwoMJ.Template/Web/Client/Two.MJ.Core.Ts"
+  },
+  "peerDependencies": {}
+}

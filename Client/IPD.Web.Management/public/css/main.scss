@@ -1,0 +1,306 @@
+﻿@import 'button.scss';
+@import 'navbar.scss';
+$bg-Image: url(/public/Images/CodeBg.png);
+$body-bg-color: rgba(255, 255, 255, 0.60);
+$main-font-family: Candara 'Courier New' Verdana sans-serif;
+$footer-bg-color: #1A535C;
+$footer-color: white;
+
+
+$light-background: #FFFFFF;
+$light-text: #303032;
+$dark-background: #303032;
+$dark-text: #d2e1dd;
+
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
+        background-color: $light-background;
+        color: $light-text;
+    }
+    @else {
+        background-color: $dark-background;
+        color: $dark-text;
+    }
+}
+
+@font-face {
+    font-family: "Iran Sans";
+    src: url("/public/fonts/IranSans/IRAN-San.eot"); /* IE9*/
+    src: url("/public/fonts/IranSans/IRAN-San.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/public/fonts/IranSans/IRAN-San.woff2") format("woff2"), /* chrome、firefox */
+    url("/public/fonts/IranSans/IRAN-San.woff") format("woff"), /* chrome、firefox */
+    url("/public/fonts/IranSans/IRAN-San.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-image: $bg-Image;
+}
+
+body { /* Margin bottom by footer height */
+    padding-bottom: 6rem;
+    min-height: 100vh;
+    background-color: $body-bg-color;
+    font-family: $main-font-family;
+    @include theme-colors($light-theme: true);
+
+    &.rtl {
+        font-family: Iran Sans;
+    }
+
+    &.dark {
+        @include theme-colors($light-theme: false);
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    white-space: nowrap; /* Set the fixed height of the footer here */
+    background-color: $footer-bg-color;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li, .footer a {
+    color: $footer-color;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/************ Custom Containers ************/
+.custom-container {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    padding-bottom: 0.5rem;
+}
+
+@media(max-width:580px) {
+    .custom-container {
+        padding-bottom: 20rem;
+    }
+}
+
+/*******************************************/
+/*#region Common css */
+.hideMe {
+    display: none;
+    position: absolute;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+a.disabled {
+    pointer-events: none !important;
+    color: #585858 !important;
+}
+
+/*#endregion */
+
+/************ font Styles ************/
+a {
+    cursor: pointer;
+}
+
+
+.underline {
+    border-bottom: 0.15rem solid !important;
+    padding-bottom: 0.12rem;
+
+    &:hover {
+        border-bottom: 0.1rem solid !important;
+    }
+}
+
+
+.text-black, .text-black:hover {
+    color: black;
+}
+
+.remove-underline {
+    text-decoration: none !important;
+}
+
+/*********************************/
+
+/*#region Modal */
+
+.z-index-top{
+    z-index:1000;
+}
+
+.modal-scroll-y {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-footer-hover {
+    position: sticky;
+    bottom: 0;
+    width: inherit;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    @include theme-colors($light-theme: true);
+
+    body.dark & {
+        @include theme-colors($light-theme: false);
+    }
+}
+
+
+/*#endregion */
+.svgclass {
+    display: inline-block;
+    width: auto;
+    height: 2rem;
+    background-size: cover;
+}
+
+.svgclass.alt:hover, .svgclass.alt:focus {
+    filter: invert(100%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+/*#region Login */
+
+.c-float-left {
+    float: left;
+    text-align: left;
+
+    body.rtl & {
+        float: right;
+        text-align: right;
+        direction: rtl;
+    }
+}
+
+.c-float-right {
+    float: right;
+    text-align: right;
+
+    body.rtl & {
+        float: left;
+        text-align: left;
+        direction: rtl;
+    }
+}
+
+.c-pl-1 {
+    padding-left: 0.25rem !important;
+
+    body.rtl & {
+        padding-right: 0.25rem !important;
+    }
+}
+
+.c-pl-2 {
+    padding-left: 0.5rem !important;
+
+    body.rtl & {
+        padding-right: 0.5rem !important;
+    }
+}
+
+.c-pl-3 {
+    padding-left: 0.75rem !important;
+
+    body.rtl & {
+        padding-right: 0.75rem !important;
+    }
+}
+
+.c-pl-4 {
+    padding-left: 1rem !important;
+
+    body.rtl & {
+        padding-right: 1rem !important;
+    }
+}
+
+.c-ml-auto {
+    margin-left: auto !important;
+
+    body.rtl & {
+        margin-right: auto !important;
+    }
+}
+/*#endregion */
+
+/*#region Components */
+.rtlSupport {
+    body.rtl & {
+        direction: rtl;
+    }
+}
+
+.rtlvisible-none {
+    body.rtl & {
+        display: none;
+    }
+}
+
+.darkSupport {
+    @include theme-colors($light-theme: true);
+
+    body.dark & {
+        @include theme-colors($light-theme: false);
+    }
+}
+
+.langStyle {
+    font-family: 'Iran Sans' !important;
+}
+/*#endregion */
+
+/*#region ScrollBar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*#endregion */

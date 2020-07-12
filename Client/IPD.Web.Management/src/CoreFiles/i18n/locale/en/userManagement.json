@@ -1,0 +1,15 @@
+{
+	"UserManagement": "User Management",
+	"User": "User",
+	"UserName": "UserName",
+	"FirstName": "FirstName",
+	"Surname": "Surname",
+	"Email": "Email",
+	"Password": "Password",
+	"PhoneNumber": "Phone Number",
+	"NewUser": "New User",
+	"UpdateUser": "Update User",
+	"UserUpdated": "User Updated",
+	"NewUserCreated": "New User was created"
+
+}

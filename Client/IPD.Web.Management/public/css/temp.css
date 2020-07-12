@@ -1,0 +1,103 @@
+﻿
+
+/*#region Input Style */
+
+.flat-dropdown, .flat-dropdown:active {
+    color: #349090;
+    background-color: #F7FFF7;
+    border-radius: 0rem;
+    border: 0px none !important;
+    border-bottom: 0.15rem solid #ced4da !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+    .flat-dropdown:active, .flat-dropdown:focus {
+        color: #495057;
+        background-color: transparent;
+        border: 0px none;
+        border-bottom: 0.2rem solid #8E9DAC !important;
+        outline: 0;
+    }
+
+    .flat-dropdown:hover {
+        color: #495057;
+        background-color: transparent;
+        border: 0px none;
+        border-bottom: 0.15rem solid #8E9DAC !important;
+        outline: 0;
+    }
+
+
+
+
+/*#endregion */
+
+/*#region Navbar */
+
+
+.text-nav {
+    padding-top: 1rem;
+    float: none;
+    color: rgba(52,144,144, 0.75) !important;
+    font-weight: bold;
+    text-align: center center;
+    border-bottom: solid 0.5rem rgba(52,144,144, 0.20);
+    transition: 500ms;
+}
+
+    .text-nav:hover, .text-nav:focus {
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgba(52,144,144, 1) !important;
+        background-color: rgba(52,144,144, 0.07) !important;
+        transition: 500ms;
+    }
+
+.text-nav-visited {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(52,144,144, 1) !important;
+    border-bottom: solid 0.5rem rgba(52,144,144, 0.80);
+    transition: 500ms;
+}
+
+
+.text-nav-dark {
+    padding-top: 1rem;
+    float: none;
+    color: rgba(247,255,247, 0.75) !important;
+    font-weight: bold;
+    text-align: center center;
+    border-bottom: solid 0.5rem rgba(247,255,247, 0.20);
+    transition: 500ms;
+}
+
+    .text-nav-dark:hover, .text-nav-dark:focus {
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgba(247,255,247, 1) !important;
+        background-color: rgba(52,144,144, 0.07) !important;
+        transition: 500ms;
+    }
+
+.text-nav-dark-visited {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(247,255,247, 1) !important;
+    border-bottom: solid 0.5rem rgba(247,255,247, 0.80);
+    transition: 500ms;
+}
+
+/*#endregion */
+
+
+/*#region Common */
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+/*#endregion */

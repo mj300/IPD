@@ -1,0 +1,30 @@
+{
+  "OpenCors": [
+    "https://localhost:44393",
+    "https://localhost:44397",
+    "https://localhost:44316",
+    "http://localhost:44450",
+    "https://test.osnack.co.uk",
+    "https://management.osnack.co.uk"
+  ],
+  "ExcludeRouteFromCors": [
+    "/Images"
+  ],
+  "DbConnectionStrings": [
+    "Data Source=.\\MJ17;Initial Catalog=MPD_Test;Persist Security Info=True;User ID=sa;Password=webmaster"
+    //"Data Source=nl1-wsq1.a2hosting.com;Initial Catalog=osnackco_OSnackTestDb;Persist Security Info=True;User ID=osnackco_OSnackTestUser;Password=Gv0u*6q4"
+  ],
+  "DbStringLocalizer": {
+    "ConnectionString": "Data Source=LocalizationRecords.sqlite"
+  },
+  "EmailSettings": {
+    "MailServer": "osnack.co.uk",
+    "MailPort": 465,
+    "SenderName": "oSnack",
+    "Sender": "App@osnack.co.uk",
+    "Password": "6ce95A%s",
+    "SslCheck": false,
+    "LogoUrl": "https://osnack.co.uk/Images/logo.png",
+    "EmailServiceDomain": "https://localhost:44393"
+  }
+}

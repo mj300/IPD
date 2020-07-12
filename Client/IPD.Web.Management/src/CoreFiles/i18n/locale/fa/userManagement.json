@@ -1,0 +1,14 @@
+{
+  "UserManagement": "مدیریت کاربران",
+  "User": "کاربر",
+  "UserName": "نام کاربری",
+  "FirstName": "نام",
+  "Surname": "نام خانوادگی",
+  "Email": "پست الکترونیکی",
+  "Password": "رمز عبور",
+  "PhoneNumber": "شماره تلفن",
+  "NewUser": "کابر جدید",
+  "UpdateUser": "ویرایش کاربر",
+  "UserUpdated": "کاربر ویرایش شد.",
+  "NewUserCreated": "کاربر مورد نظر ایجاد شد."
+}

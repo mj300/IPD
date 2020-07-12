@@ -1,0 +1,16 @@
+{
+  "RoleManagement": "Role Management",
+  "AccessClaimType": "Access Claim Type",
+  "RoleName": "Name",
+  "AccessClaim": "Access Claim",
+  "NewRole": "New Role",
+  "UpdateRole": "Update Role",
+  "RoleDeleted": "Role was deleted",
+  "RoleUpdated": "Role Updated",
+  "NewRoleCreated": "New role was created",
+  "Role": "Role",
+  "Admin": "Admin",
+  "Manager": "Manager",
+  "Patient": "Patient",
+  "Staff": "Staff"
+}
